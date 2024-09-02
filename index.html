@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="PassGenX es un servicio para generar contraseñas aleatorias de manera rápida y segura."
+    />
+    <meta name="author" content="Medcoronado" />
+    <meta name="generator" content="PassGenX Web Service" />
+    <title>PassGenX | Generador de contraseñas</title>
+
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="img/autogister.png"
+          alt=""
+          width="75"
+          height="80"
+        />
+        <h2 class="bold">PassGenX</h2>
+        <p class="lead">Generador de contraseñas aleatorias.</p>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <nav>
+          <div class="card-deck mb-3 justify-content-center rounded-5">
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-genx"
+                  onclick="botongenerar()"
+                >
+                  <img src="./img/icon_password.png" alt="" /> Generador
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-white"
+                  onclick="botonmanual()"
+                >
+                  <img src="./img/icon_manual.png" alt="" /> Manual de usuario
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="justify-content-center rounded-5">
+            <form>
+              <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="text" class="form-control" id="contraseña" />
+              </div>
+            </form>
+            <div class="col-md-6 ml-auto mr-auto text-center">
+              <span class="font-weight-bold" id="nivelSeguridad"></span>
+            </div>
+            <div class="text-center">
+              <label for="tamano">Tamaño:</label>
+              <input
+                type="range"
+                id="tamano"
+                min="1"
+                max="50"
+                value="8"
+                oninput="mostrarTamano()"
+              />
+              <span id="tamanoValor">8</span>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="mayusculas" checked />
+                <label for="mayusculas"> Incluir mayúsculas:</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="minusculas" checked />
+                <label for="minusculas"> Incluir minúsculas:</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="numeros" checked />
+                <label for="numeros"> Incluir números:</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input type="checkbox" id="simbolos" checked />
+                <label for="simbolos"> Incluir símbolos:</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center rounded-5">
+          <button onclick="botonContraseña()" class="btn btn-primary my-2">
+            <img src="./img/icon_emailpass.png" alt="" /> Generar contraseña
+            aleatoria
+          </button>
+          <button
+            onclick="copiarDatos()"
+            class="btn btn-secondary my-2"
+            id="liveToastBtn"
+          >
+            <img src="./img/icon_copy.png" alt="" /> Copiar contraseña
+          </button>
+          <!-- Aquí se mostrará el mensaje de confirmación -->
+          <div
+            id="mensajeCopia"
+            style="display: none; color: green; margin-top: 10px"
+          >
+            <strong>📋 ¡Contraseña copiada al portapapeles! </strong>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">
+          👻 Diseñado y construido por
+          <a target="_blank" href="https://github.com/medcoronado"
+            >medcoronado</a
+          >
+          con cariño para todo internet.
+        </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="privacidad.html">Privacidad</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="manualdeusuario.html">Manual de usuario</a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://github.com/medcoronado/PassGenX-Password-generator"
+              >Ver codigo en Github</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/generador.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="PassGenX es un servicio para generar contraseñas aleatorias de manera rápida y segura."
+    />
+    <meta name="author" content="Medcoronado" />
+    <meta name="generator" content="PassGenX Web Service" />
+    <title>PassGenX | Generador de contraseñas</title>
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="img/autogister.png"
+          alt=""
+          width="75"
+          height="80"
+        />
+        <h2 class="bold">PassGenX</h2>
+        <p class="lead">Generador de contraseñas aleatorias.</p>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <nav>
+          <div class="card-deck mb-3 justify-content-center rounded-5">
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-white"
+                  onclick="botongenerar()"
+                >
+                  <img src="./img/icon_password.png" alt="" /> Generador
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-primary"
+                  onclick="botonmanual()"
+                >
+                  <img src="./img/icon_manual.png" alt="" /> Manual de usuario
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <div class="justify-content-center rounded-5">
+          <h1 class="mt-5">Manual de usuario</h1>
+          <p class="lead">
+            Este manual te guiará a través de los pasos para utilizar esta
+            herramienta de manera efectiva y segura.
+          </p>
+          <h4>Introducción</h4>
+          <p>
+            PassGenX es una aplicación web diseñada para ayudarte a generar
+            contraseñas seguras y robustas. Con esta herramienta, puedes crear
+            contraseñas aleatorias con diferentes combinaciones de letras
+            mayúsculas, minúsculas, números y caracteres especiales.
+            <br>
+            <Strong>Nota:</Strong> Esto lo hice para usarlo de manera personal, pero pensé que sería útil compartirlo en internet. Espero que pueda ser de ayuda para otros.
+          </p>
+          <h4>Configuración de la Contraseña</h4>
+          <strong
+            >Una vez dentro del Generador de Contraseñas, el usuario puede
+            configurar la contraseña siguiendo estos pasos:
+          </strong>
+          <br />
+          <p>
+            <strong>1.</strong> Seleccionar la longitud deseada de la contraseña
+            ingresando un número en el campo "Longitud".
+            <img src="img/manual/img_longitud.png" alt="" /> <br />
+            <strong>2.</strong> Marcar las casillas correspondientes para
+            incluir mayúsculas, minúsculas, números y/o caracteres especiales
+            según las preferencias de seguridad. <br />
+            <img src="img/manual/img_casillas.png" alt="" />
+          </p>
+          <h4>Generación de la Contraseña</h4>
+          <p>
+            <strong
+              >Después de configurar las opciones, el usuario puede generar la
+              contraseña siguiendo estos pasos:</strong
+            >
+            <br />
+            <strong>3.</strong> Hacer clic en el botón "Generar contraseña
+            aleatoria". <br />
+            <img src="img/manual/img_btngenerar.png" alt="" /> <br />
+            <strong>4.</strong> La contraseña generada aparecerá en el campo de
+            texto "Contraseña".
+            <img
+              class="img-fluid"
+              src="img/manual/img_contraseñagenerada.png"
+              alt=""
+            /><br />
+            <strong>(Opcional).</strong> Si el usuario no está satisfecho con la
+            contraseña generada, puede hacer clic nuevamente en el botón para
+            obtener una nueva opción.
+          </p>
+          <h4>Copiar contraseña</h4>
+          <p>
+            <strong
+              >Para copiar la contraseña generada en el portapapeles del
+              dispositivo, el usuario debe seguir estos pasos:</strong
+            >
+            <br />
+            <strong>5.</strong> Haga clic en el botón "Copiar contraseña" para
+            almacenarla temporalmente en su dispositivo. <br />
+            <img src="img/manual/img_btncopiar.png" alt="" /> <br />
+            <strong>(Opcional).</strong> La contraseña puede pegarse en
+            cualquier campo de entrada de texto utilizando la opción "Pegar" en
+            el menú desplegable o la combinación de teclas Ctrl+V (Windows o
+            Linux) o Cmd+V (Mac).
+          </p>
+          <h4>Evaluación de contraseña</h4>
+          <p>
+            Esta evaluación ayuda a los usuarios a comprender la robustez de la
+            contraseña en función de su longitud y combinación de caracteres. El
+            nivel de fortaleza de la contraseña se mostrará en un cuadro de
+            texto debajo del campo de contraseña, tiene cuatro modos "Muy
+            débil", "Débil" "Moderada" "Fuerte". <br />
+            <img class="img-fluid" src="img/manual/img_evaluacion.png" alt="" />
+          </p>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">
+          👻 Diseñado y construido por
+          <a target="_blank" href="https://github.com/medcoronado"
+            >medcoronado</a
+          >
+          con cariño para todo internet.
+        </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="privacidad.html">Privacidad</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="manualdeusuario.html">Manual de usuario</a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://github.com/medcoronado/PassGenX-Password-generator"
+              >Ver codigo en Github</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/generador.js"></script>
+  </body>
+</html>

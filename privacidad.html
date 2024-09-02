@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="PassGenX es un servicio para generar contraseñas aleatorias de manera rápida y segura."
+    />
+    <meta name="author" content="Medcoronado" />
+    <meta name="generator" content="PassGenX Web Service" />
+    <title>PassGenX | Generador de contraseñas</title>
+
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="img/autogister.png"
+          alt=""
+          width="75"
+          height="80"
+        />
+        <h2 class="bold">PassGenX</h2>
+        <p class="lead">Generador de contraseñas aleatorias.</p>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <nav>
+          <div class="card-deck mb-3 justify-content-center rounded-5">
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-white"
+                  onclick="botongenerar()"
+                >
+                  <img src="./img/icon_password.png" alt="" /> Generador
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-4">
+                <button
+                  type="button"
+                  class="btn btn-lg btn-block btn-white"
+                  onclick="botonmanual()"
+                >
+                  <img src="./img/icon_manual.png" alt="" /> Manual de usuario
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-10 ml-auto mr-auto">
+        <div class="justify-content-center rounded-5">
+          <h1 class="mt-5">Politica de privacidad</h1>
+          <p class="lead">
+            A continuación, se proporciona la información sobre cómo se
+            recopilan, utilizan y protegen los datos personales.
+          </p>
+
+          <h3>Recolección de Datos</h3>
+
+          <p>
+            No se recopila ni se almacena ningún dato personal de los usuarios
+            visitantes. No se requiere ningún tipo de registro ni se solicita
+            información personal para utilizar el servicio.
+          </p>
+
+          <h3>Uso de Datos</h3>
+
+          <p>
+            Como no se recopilan los datos personales, no se utiliza ni se
+            comparte ninguna información de los usuarios. La generación de
+            contraseñas se realiza localmente en el navegador del usuario sin
+            enviar información a servidores externos.
+          </p>
+
+          <h3>Cookies</h3>
+
+          <p>
+            Este servicio no utiliza cookies ni otras tecnologías de seguimiento
+            para recopilar información sobre los usuarios.
+          </p>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">
+          👻 Diseñado y construido por
+          <a target="_blank" href="https://github.com/medcoronado"
+            >medcoronado</a
+          >
+          con cariño para todo internet.
+        </p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="privacidad.html">Privacidad</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="manualdeusuario.html">Manual de usuario</a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="https://github.com/medcoronado/PassGenX-Password-generator"
+              >Ver codigo en Github</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/generador.js"></script>
+  </body>
+</html>
